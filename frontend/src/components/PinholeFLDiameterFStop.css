@@ -1,0 +1,70 @@
+html,
+body {
+    box-sizing: border-box;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2em;
+    width: 200px;
+    vertical-align: bottom;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    border-bottom: 2px solid rgb(222, 204, 184);
+}
+
+.ph-top-left {
+    border-top-left-radius: 15px;
+}
+
+.ph-top-right {
+    border-top-right-radius: 15px;
+}
+
+td {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    height: 30px;
+    border: none;
+}
+
+.pinhole-table tr:nth-child(even) {
+    background-color: rgb(222, 204, 184);
+}
+
+@media (max-width: 1100px) {
+
+    .pinhole-table th {
+        font-size: 1em;
+    }
+
+    .pinhole-table td {
+        width: 60px;
+    }
+
+    .pinhole-table td:nth-child(5) {
+        width: 126px;
+    }
+}
+
+@media (max-width: 550px) {
+
+    .pinhole-table th {
+        font-size: .8em;
+        max-width: 50px;
+        text-wrap: wrap;
+    }
+
+    .pinhole-table td {
+        font-size: .8em;
+        width: 20px;
+    }
+
+    .pinhole-table td:nth-child(5) {
+        width: 80px;
+    }
+}

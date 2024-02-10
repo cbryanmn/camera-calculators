@@ -1,0 +1,41 @@
+html,
+body {
+    box-sizing: border-box;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2em;
+    width: 200px;
+    vertical-align: bottom;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+.ri-table td {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    height: 30px;
+    border: none;
+    padding: 5px 50px 5px 50px;
+}
+
+.ri-table tr:nth-child(even) {
+    background-color: rgb(222, 204, 184);
+}
+
+@media (max-width:600px) {
+
+    .ri-table th {
+        font-size: 1em;
+    }
+
+    .ri-table td {
+        font-size: 0.8em;
+        padding: 0 20px;
+    }
+}

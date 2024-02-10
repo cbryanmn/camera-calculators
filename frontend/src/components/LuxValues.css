@@ -1,0 +1,66 @@
+table {
+    border-collapse: collapse;
+}
+
+.lv-bb {
+    border-bottom: 1px solid #848484;
+}
+
+th {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2em;
+    width: 200px;
+    vertical-align: bottom;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    background-color: rgb(222, 204, 184);
+}
+
+.lux-values-table td {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    height: 30px;
+    border: none;
+    padding: 5px 20px 5px 20px;
+}
+
+.lux-values-table .lv-loc {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size: 1.2em;
+}
+
+.lux-values-table .lv-bottom-row {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.lux-values-table .lv-bl {
+    border-bottom-left-radius: 15px;
+}
+
+.lux-values-table tr:nth-child(even) {
+    background-color: rgb(222, 204, 184);
+}
+
+.contrast {
+    background-color: rgb(222, 204, 184);
+    font-weight: 600;
+}
+
+@media (max-width:600px) {
+
+    .lux-values-table th {
+        font-size: 1em;
+    }
+
+    .lux-values-table .lv-loc {
+        font-size: 1em;
+    }
+
+    .lux-values-table td {
+        font-size: 0.8em;
+        padding: 0 1px;
+        width: 150px;
+    }
+}

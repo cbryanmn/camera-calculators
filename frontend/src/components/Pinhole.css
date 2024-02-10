@@ -1,0 +1,222 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.pinhole-calc-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.h2-top {
+    font-size: 3em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    z-index: 2;
+    color: #3c3c3c;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 0;
+}
+
+.h2-bottom {
+    font-size: 2.7em;
+    font-family: 'Homemade Apple', cursive;
+    z-index: 1;
+    color: rgb(207, 185, 161);
+    margin: 0;
+    padding: 0;
+    margin: -50px 0 0 0;
+}
+
+.select {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.7em;
+    font-weight: 500;
+    color: #3c3c3c;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    padding: 0;
+}
+
+.options-container-top {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-wrap: nowrap;
+    max-width: 80%;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.options-container-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-wrap: nowrap;
+    max-width: 80%;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.options-container-top label,
+.options-container-bottom label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3em;
+    font-weight: 500;
+    margin-right: 20px;
+    color: #3c3c3c;
+}
+
+.options-container-top input,
+.options-container-bottom input {
+    margin-right: 5;
+    margin-bottom: 10px;
+}
+
+.entry-container {
+    background-color: rgb(222, 204, 184);
+    width: min-content;
+    height: auto;
+    border-radius: 15px;
+    padding: 30px 60px 40px 60px;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    max-width: 80%;
+    flex-wrap: wrap;
+}
+
+.entry-field {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    font-weight: 400;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 30px;
+    position: relative;
+}
+
+.entry-field:last-child {
+    margin-right: 0;
+}
+
+.entry-field input {
+    width: 140px;
+}
+
+.bottom-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.button {
+    background-color: #3c3c3c;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    border: 2px solid #3c3c3c;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    box-shadow: 3px 3px 7px rgb(207, 185, 161);
+    cursor: pointer;
+}
+
+.result {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    color: #3c3c3c;
+    margin-top: 90px;
+}
+
+.result-label {
+    padding: 0;
+    margin: 40px 0 0 0;
+    font-size: 1.6em;
+}
+
+.results {
+    margin-top: 10px;
+    font-size: 1.4em;
+}
+
+.chart-div {
+    border: 2px solid rgb(222, 204, 184);
+    border-radius: 15px;
+    margin-bottom: 80px;
+}
+
+@media (max-width: 1100px) {
+
+    .entry-container {
+        flex-direction: column;
+    }
+
+    .entry-field {
+        margin-right: 0;
+        position: unset;
+    }
+
+    .entry-field label {
+        margin: 0;
+        padding: 0;
+    }
+
+    .entry-field input {
+        margin: 0;
+    }
+}
+
+@media (max-width: 550px) {
+
+    .h2-top {
+        font-size: 2em !important;
+    }
+
+    .h2-bottom {
+        font-size: 1.7em !important;
+        margin-top: -35px !important;
+    }
+
+    .select {
+        font-size: 1.3em;
+    }
+
+    .options-container-top label,
+    .options-container-bottom label {
+        font-size: 0.9em;
+    }
+
+    .entry-field {
+        font-size: 0.9em;
+    }
+
+    .button {
+        font-size: 0.9em;
+    }
+
+    .result-label {
+        font-size: 1.3em;
+    }
+
+    .results {
+        font-size: 0.9em;
+    }
+
+    .bottom-div {
+        margin-bottom: 0;
+    }
+}

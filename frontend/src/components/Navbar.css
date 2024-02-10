@@ -1,0 +1,197 @@
+.navbar {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+    background-color: #f7a583;
+    padding-right: 20px;
+    box-shadow: 6px 10px 15px 0px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-logo {
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    margin-left: 120px;
+    text-align: center;
+}
+
+.navbar-logo .camera {
+    font-size: 3rem;
+    font-family: 'Homemade Apple', cursive;
+    font-style: italic;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+.navbar-logo .calculators {
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    padding-top: 10px;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+    justify-content: end;
+    margin-right: 120px;
+}
+
+.nav-item {
+    height: 80px;
+    padding-bottom: 10px;
+}
+
+.nav-item:nth-child(2):hover {
+    border-bottom: none;
+}
+
+.nav-links {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding-left: 1.5rem;
+    height: 100%;
+    letter-spacing: 0.5px;
+    font-size: 1.2em;
+    text-wrap: nowrap;
+}
+
+.fa-bars {
+    color: #fff;
+}
+
+.menu-icon {
+    display: none;
+}
+
+@media (max-width: 960px) {
+
+    body,
+    html {
+        overflow-x: hidden;
+    }
+
+    .navbar {
+        padding: 0;
+        margin: 0;
+    }
+
+    .navbar-logo {
+        margin-left: 35px;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        /* left: -100%; */
+        opacity: 1;
+        transition: all 0.4s ease;
+        padding: 0;
+        margin: 0;
+        justify-content: center;
+    }
+
+    .nav-menu.active {
+        background: #f7a583;
+        left: 0;
+        margin-left: 60%;
+        opacity: 1;
+        transition: all 0.6s ease;
+        z-index: 1;
+        padding: 0;
+        padding-top: 30px;
+        width: 40%;
+    }
+
+    .nav-links {
+        text-align: center;
+        padding-left: 0;
+        margin-left: 0;
+        display: flex;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        height: 40px;
+        margin: auto;
+        justify-content: center;
+    }
+
+    .nav-links:hover {
+        cursor: pointer;
+    }
+
+    .nav-item {
+        height: 60px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav-item:hover {
+        border: none;
+    }
+
+    .nav-item:last-child {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .menu-icon {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 2%;
+        transform: translate(-100%, 60%);
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+
+    .fa-times {
+        color: #fff;
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .navbar-logo .camera {
+        font-size: 2rem;
+    }
+
+    .navbar-logo .calculators {
+        font-size: 1.5rem;
+    }
+
+    .menu-icon {
+        font-size: 1.5rem;
+        transform: unset;
+        position: unset;
+        vertical-align: middle;
+        margin-right: 40px;
+    }
+
+    .nav-links {
+        font-size: 1em;
+        text-wrap: wrap;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .navbar-logo {
+        display: none;
+    }
+}
